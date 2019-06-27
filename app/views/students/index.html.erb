@@ -1,5 +1,5 @@
 <div>
-<% @all_students.map do |student|%>
-<%= student.first_name + student.last_name %>
+<% @all_students.each do |student| %>
+<p><%=student.to_s%></p>
 <% end %>
 </div>
